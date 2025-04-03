@@ -1,0 +1,155 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.zag1{
+    color: white;
+    margin: 100px 500px;
+    font-size: 80px;
+    text-align: center;
+}
+
+.mainblock{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.upblock{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.upblock1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.downblock{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.downblock1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.egg{
+    background-color: rgb(189, 189, 189);
+    width: 900px;
+    height: 800px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.polegg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.polegg div p{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(70, 70, 70);
+    width: 100%;
+    height: 60px;
+    padding: 30px 0 0 0;
+    margin: 0;
+    border-bottom: 2px solid black;
+}
+.polegg div h3{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(158, 158, 158);
+    width: 100%;
+    height: 40px;
+    padding: 20px 0 0 0;
+    margin: 0;
+    border-bottom: 2px solid black;
+    font-weight: 100;
+}
+#time{
+    width: 10%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+#patient{
+    width: 25%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+#vrach{
+    width: 25%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+#clinika{
+    width: 25%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+#technik{
+    width: 15%;
+    height: 100%;
+}
+
+
+.adminblock{
+    background-color: rgb(180, 180, 180);
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 20px;
+}
+.zag2{
+    color: white;
+    margin-top: 90px;
+    font-size: 50px;
+    text-align: center;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 100%;
+    padding: 20px;
+    margin: auto;
+}
+.boxes input{
+    margin: 0 0 40px 50px;
+    width: 600px;
+    height: 50px;
+    font-size: 25px;
+}
+button{
+    width: 200px;
+    height: 90px;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 30px;
+}
+.boxes p{
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    width: 600px;
+    height: 50px;
+    padding: 30px 0 0 0;
+}
