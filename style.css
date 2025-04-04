@@ -71,10 +71,10 @@ h2{
 }
 .polegg div h3{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     background-color: rgb(158, 158, 158);
     width: 100%;
-    height: 40px;
+    height: auto;
     padding: 20px 0 0 0;
     margin: 0;
     border-bottom: 2px solid black;
@@ -104,7 +104,35 @@ h2{
     width: 15%;
     height: 100%;
 }
-
+#date1{
+    width: 12%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+#time1{
+    width: 8%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+#patient1{
+    width: 25%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+#vrach1{
+    width: 25%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+#clinika1{
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+#technik1{
+    width: 10%;
+    height: 100%;
+}
 
 .adminblock{
     background-color: rgb(180, 180, 180);
@@ -115,6 +143,7 @@ h2{
     flex-direction: column;
     margin: auto;
     border-radius: 20px;
+    padding: 0 0 50px 0;
 }
 .zag2{
     color: white;
@@ -134,7 +163,14 @@ h2{
     margin: 0 0 40px 50px;
     width: 600px;
     height: 50px;
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.boxes select{
+    margin: 0 0 40px 50px;
+    width: 600px;
+    height: 50px;
+    font-size: 20px;
 }
 button{
     width: 200px;
@@ -152,4 +188,10 @@ button{
     width: 600px;
     height: 50px;
     padding: 30px 0 0 0;
+}
+#data{
+    text-align: center;
+}
+#date{
+    text-align: center;
 }

@@ -12,20 +12,21 @@
 
     <div class="mainblock">
             <div class="upblock">
-                <div class="egg">
+                <div class="egg" id="egg1">
                     <h2>ПОНЕДЕЛЬНИК</h2>
                     <div class="polegg">
-                        <div id="time"><p>ВРЕМЯ</p></div>
-                        <div id="patient"><p>ПАЦИЕНТ</p></div>
-                        <div id="clinika"><p>КЛИНИКА</p></div>
-                        <div id="vrach"><p>ВРАЧ</p></div>
-                        <div id="technik"><p>ТЕХНИК</p></div>
+                        <div id="date1"><p>ДАТА</p></div>
+                        <div id="time1"><p>ВРЕМЯ</p></div>
+                        <div id="patient1"><p>ПАЦИЕНТ</p></div>
+                        <div id="clinika1"><p>КЛИНИКА</p></div>
+                        <div id="vrach1"><p>ВРАЧ</p></div>
+                        <div id="technik1"><p>ТЕХНИК</p></div>
                     </div>
                 </div>
-                <div class="egg">
+                <div class="egg" id="egg2">
                     <h2>ВТОРНИК</h2>
                     <div class="polegg">
-                        <div id="time"><p>ВРЕМЯ</p></div>
+                        <div id="time"><p>ДАТА</p></div>
                         <div id="patient"><p>ПАЦИЕНТ</p></div>
                         <div id="clinika"><p>КЛИНИКА</p></div>
                         <div id="vrach"><p>ВРАЧ</p></div>
@@ -35,20 +36,20 @@
             </div>
 
             <div class="upblock1">
-                <div class="egg">
+                <div class="egg" id="egg3">
                     <h2>СРЕДА</h2>
                     <div class="polegg">
-                        <div id="time"><p>ВРЕМЯ</p></div>
+                        <div id="time"><p>ДАТА</p></div>
                         <div id="patient"><p>ПАЦИЕНТ</p></div>
                         <div id="clinika"><p>КЛИНИКА</p></div>
                         <div id="vrach"><p>ВРАЧ</p></div>
                         <div id="technik"><p>ТЕХНИК</p></div>
                     </div>
                 </div>
-                <div class="egg">
+                <div class="egg" id="egg4">
                     <h2>ЧЕТВЕРГ</h2>
                     <div class="polegg">
-                        <div id="time"><p>ВРЕМЯ</p></div>
+                        <div id="time"><p>ДАТА</p></div>
                         <div id="patient"><p>ПАЦИЕНТ</p></div>
                         <div id="clinika"><p>КЛИНИКА</p></div>
                         <div id="vrach"><p>ВРАЧ</p></div>
@@ -59,20 +60,20 @@
 
        
             <div class="downblock">
-                <div class="egg">
+                <div class="egg" id="egg5">
                     <h2>ПЯТНИЦА</h2>
                     <div class="polegg">
-                        <div id="time"><p>ВРЕМЯ</p></div>
+                        <div id="time"><p>ДАТА</p></div>
                         <div id="patient"><p>ПАЦИЕНТ</p></div>
                         <div id="clinika"><p>КЛИНИКА</p></div>
                         <div id="vrach"><p>ВРАЧ</p></div>
                         <div id="technik"><p>ТЕХНИК</p></div>
                     </div>
                 </div>
-                <div class="egg">
+                <div class="egg" id="egg6">
                     <h2>СУББОТА</h2>
                     <div class="polegg">
-                        <div id="time"><p>ВРЕМЯ</p></div>
+                        <div id="time"><p>ДАТА</p></div>
                         <div id="patient"><p>ПАЦИЕНТ</p></div>
                         <div id="clinika"><p>КЛИНИКА</p></div>
                         <div id="vrach"><p>ВРАЧ</p></div>
@@ -82,20 +83,20 @@
             </div>
 
             <div class="downblock1">
-                <div class="egg">
+                <div class="egg" id="egg7">
                     <h2>ВОСКРЕСЕНЬЕ</h2>
                     <div class="polegg">
-                        <div id="time"><p>ВРЕМЯ</p></div>
+                        <div id="time"><p>ДАТА</p></div>
                         <div id="patient"><p>ПАЦИЕНТ</p></div>
                         <div id="clinika"><p>КЛИНИКА</p></div>
                         <div id="vrach"><p>ВРАЧ</p></div>
                         <div id="technik"><p>ТЕХНИК</p></div>
                     </div>
                 </div>
-                <div class="egg">
+                <div class="egg" id="egg8">
                     <h2>ЛИШНИЙ БЛОК</h2>
                     <div class="polegg">
-                        <div id="time"><p>ВРЕМЯ</p></div>
+                        <div id="time"><p>ДАТА</p></div>
                         <div id="patient"><p>ПАЦИЕНТ</p></div>
                         <div id="clinika"><p>КЛИНИКА</p></div>
                         <div id="vrach"><p>ВРАЧ</p></div>
@@ -109,19 +110,30 @@
             <h1 class="zag2">ДОБАВЛЕНИЕ В РАСПИСАНИЕ</h1>
             <div class="boxes">
                 <p>ДЕНЬ НЕДЕЛИ</p>
-                <input type="text">
+                <select name="data" id="data">
+                    <option value="ПОНЕДЕЛЬНИК">ПОНЕДЕЛЬНИК</option>
+                    <option value="ВТОРНИК">ВТОРНИК</option>
+                    <option value="СРЕДА">СРЕДА</option>
+                    <option value="ЧЕТВЕРГ">ЧЕТВЕРГ</option>
+                    <option value="ПЯТНИЦА">ПЯТНИЦА</option>
+                    <option value="СУББОТА">СУББОТА</option>
+                    <option value="ВОСКРЕСЕНЬЕ">ВОСКРЕСЕНЬЕ</option>
+                    <option value="ЛИШНИЙ">ЛИШНИЙ</option>
+                </select>
+                <p>ДАТА</p>
+                <input type="date" id="i_date">
                 <p>ВРЕМЯ</p>
-                <input type="text">
+                <input type="time" id="i_time">
                 <p>ПАЦИЕНТ</p>
-                <input type="text">
+                <input type="text" id="i_patient">
                 <p>КЛИНИКА</p>
-                <input type="text">
+                <input type="text" id="i_clinika">
                 <p>ВРАЧ</p>
-                <input type="text">
+                <input type="text" id="i_vrach">
                 <p>ТЕХНИК</p>
-                <input type="text">
+                <input type="text" id="i_technik">
             </div>
-            <button>ДОБАВИТЬ</button>
+            <button id="add_btn">ДОБАВИТЬ</button>
     </div>
 </body>
 </html>
