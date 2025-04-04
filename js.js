@@ -7,15 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const i_vrach = document.getElementById("i_vrach");
     const i_technik = document.getElementById("i_technik");
 
-
-    const date = document.getElementById("date1");
-    const time = document.getElementById("time1");
-    const patient = document.getElementById("patient1");
-    const clinika = document.getElementById("clinika1");
-    const vrach = document.getElementById("vrach1");
-    const technik = document.getElementById("technik1");
-
-    const block = document.getElementById("egg1");
+    let block = document.getElementById("egg1");
     const initialHeight = block.offsetHeight;
 
     const btn = document.getElementById("add_btn");
@@ -26,13 +18,40 @@ document.addEventListener('DOMContentLoaded', function(){
             return;
         }
 
+        if(data.value === "ПОНЕДЕЛЬНИК"){
+            block = document.getElementById("egg1");
+        } else if (data.value === "ВТОРНИК"){
+            block = document.getElementById("egg2");
+        } else if (data.value === "СРЕДА"){
+            block = document.getElementById("egg3");
+        } else if(data.value === "ЧЕТВЕРГ"){
+            block = document.getElementById("egg4");
+        } else if(data.value === "ПЯТНИЦА"){
+            block = document.getElementById("egg5");
+        } else if (data.value === "СУББОТА"){
+            block = document.getElementById("egg6");
+        } else if (data.value === "ВОСКРЕСЕНЬЕ"){
+            block = document.getElementById("egg7");
+        } else if (data.value === "ЛИШНИЙ"){
+            block = document.getElementById("egg8");
+        }
+        const polblock = block.querySelector('.polegg');
+    
+        const date = polblock.querySelector('#date');
+        const time = polblock.querySelector('#time');
+        const patient = polblock.querySelector('#patient');
+        const clinika = polblock.querySelector('#clinika');
+        const vrach = polblock.querySelector('#vrach');
+        const technik = polblock.querySelector('#technik');
+
         function add_info(divElement, text){
             const newH3 = document.createElement('h3');
             newH3.textContent = text;
             divElement.appendChild(newH3); 
         }
 
-        add_info(date, i_date.value)
+        
+        add_info(date, i_date.value);
         add_info(time, i_time.value);
         add_info(patient, i_patient.value);
         add_info(clinika, i_clinika.value);
@@ -40,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function(){
         add_info(technik, i_technik.value);
 
         updateHeight();
+        alert("Dada");
     });
 
     function updateHeight(){

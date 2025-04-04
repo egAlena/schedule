@@ -41,7 +41,7 @@ body{
 .egg{
     background-color: rgb(189, 189, 189);
     width: 900px;
-    height: 800px;
+    height: 1084px;
     margin: 10px;
     border-radius: 10px;
     display: flex;
@@ -80,8 +80,13 @@ h2{
     border-bottom: 2px solid black;
     font-weight: 100;
 }
+#date{
+    width: 12%;
+    height: 100%;
+    border-right: 2px solid black;
+}
 #time{
-    width: 10%;
+    width: 8%;
     height: 100%;
     border-right: 2px solid black;
 }
@@ -96,40 +101,11 @@ h2{
     border-right: 2px solid black;
 }
 #clinika{
-    width: 25%;
-    height: 100%;
-    border-right: 2px solid black;
-}
-#technik{
-    width: 15%;
-    height: 100%;
-}
-#date1{
-    width: 12%;
-    height: 100%;
-    border-right: 2px solid black;
-}
-#time1{
-    width: 8%;
-    height: 100%;
-    border-right: 2px solid black;
-}
-#patient1{
-    width: 25%;
-    height: 100%;
-    border-right: 2px solid black;
-}
-#vrach1{
-    width: 25%;
-    height: 100%;
-    border-right: 2px solid black;
-}
-#clinika1{
     width: 20%;
     height: 100%;
     border-right: 2px solid black;
 }
-#technik1{
+#technik{
     width: 10%;
     height: 100%;
 }
