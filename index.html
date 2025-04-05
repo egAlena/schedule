@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Schedule</title>
     <link rel="stylesheet" href="style.css">
     <script src="js.js" defer></script>
 </head>
@@ -114,6 +114,7 @@
     </div>
 
     <div class="adminblock">
+        <div class="add_div">
             <h1 class="zag2">ДОБАВЛЕНИЕ В РАСПИСАНИЕ</h1>
             <div class="boxes">
                 <p>ДЕНЬ НЕДЕЛИ</p>
@@ -140,7 +141,34 @@
                 <p>ТЕХНИК</p>
                 <input type="text" id="i_technik">
             </div>
-            <button id="add_btn">ДОБАВИТЬ</button>
+            <div id="buttons">
+                <button id="add_btn">ДОБАВИТЬ</button>
+            </div>
+        </div>
+
+        
+        <div class="del_div">
+            <h1 class="zag2">УДАЛЕНИЕ ИЗ РАСПИСАНИЯ</h1>
+            <div class="boxes">
+                <p>ДЕНЬ НЕДЕЛИ</p>
+                <select name="data" id="data">
+                    <option value="ПОНЕДЕЛЬНИК">ПОНЕДЕЛЬНИК</option>
+                    <option value="ВТОРНИК">ВТОРНИК</option>
+                    <option value="СРЕДА">СРЕДА</option>
+                    <option value="ЧЕТВЕРГ">ЧЕТВЕРГ</option>
+                    <option value="ПЯТНИЦА">ПЯТНИЦА</option>
+                    <option value="СУББОТА">СУББОТА</option>
+                    <option value="ВОСКРЕСЕНЬЕ">ВОСКРЕСЕНЬЕ</option>
+                    <option value="ЛИШНИЙ">ЛИШНИЙ</option>
+                </select>
+                <p>НОМЕР</p>
+                <input type="number" id="i_number" min="1" max="50" step="1">
+            </div>
+            <div id="buttons">
+                <button id="clear_btn">ОЧИСТИТЬ</button>
+                <button id="del_btn">УДАЛИТЬ</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
