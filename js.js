@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const initialHeight = block.offsetHeight;
 
     const btn = document.getElementById("add_btn");
+    const clear_btn = document.getElementById("clear_btn");
+    const del_btn = document.getElementById("del_btn");
 
     btn.addEventListener('click', function(){
         if (data.value === "" || i_date.value === "" || i_time.value === "" || i_patient.value === "" || i_clinika.value === "" || i_vrach.value === "" || i_technik.value === "") {
@@ -47,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function(){
         function add_info(divElement, text){
             const newH3 = document.createElement('h3');
             newH3.textContent = text;
-            divElement.appendChild(newH3); 
+            divElement.appendChild(newH3);
         }
 
         
@@ -57,9 +59,47 @@ document.addEventListener('DOMContentLoaded', function(){
         add_info(clinika, i_clinika.value);
         add_info(vrach, i_vrach.value);
         add_info(technik, i_technik.value);
+        updateHeight();
+        alert("Добавлено");
+    });
+    
+    clear_btn.addEventListener('click', function(){
+        function delete_info(divElement){
+            if(divElement){
+                const first = divElement.firstElementChild;
+                divElement.innerHTML = '';
+                if(first){
+                    divElement.appendChild(first);
+                }
+            }
+        }
+        for (let i=1; i<9; i++){
+            block = document.getElementById("egg" + i)
+            const polblock = block.querySelector('.polegg');
+        
+            const date = polblock.querySelector('#date');
+            const time = polblock.querySelector('#time');
+            const patient = polblock.querySelector('#patient');
+            const clinika = polblock.querySelector('#clinika');
+            const vrach = polblock.querySelector('#vrach');
+            const technik = polblock.querySelector('#technik');
+
+            delete_info(date);
+            delete_info(time);
+            delete_info(patient);
+            delete_info(clinika);
+            delete_info(vrach);
+            delete_info(technik);
+        }
+       
+        updateHeight();
+        alert("Очищено");
+    });
+
+    del_btn.addEventListener('click', function(){
 
         updateHeight();
-        alert("Dada");
+        alert("Удалено");
     });
 
     function updateHeight(){
